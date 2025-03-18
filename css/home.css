@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-   
+    background: linear-gradient(120deg, #1f4037, #99f2c8);
     /* background: url('/image/trian_PNG16650.png') no-repeat center center/cover; */
     /* Gradient background */
     color: white;
