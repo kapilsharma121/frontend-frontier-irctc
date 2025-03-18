@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(120deg, #1f4037, #99f2c8); */
+    background: url('/image/trian_PNG16650.png') no-repeat center center/cover;
+    /* Gradient background */
+    color: white;
+    text-align: center;
+}
+
+
+/* 🔹 Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 50px;
+    width: 95%;
+    top: 0;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+/* 🔹 Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    
+    margin-left: -40px;  /* ✅ Shifted Slightly Left */
+}
+.nav-links li {
+    display: inline;
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
+}
+.nav-links a:hover {
+    background: #ff5722;
+}
+
+/* 🔹 Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Search Box */
+.search-box {
+    display: flex;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+.search-box input, .search-box button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.search-box input {
+    width: 150px;
+}
+.search-box button {
+    background: #ff5722;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 🔹 Footer (Fixed at Bottom) */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

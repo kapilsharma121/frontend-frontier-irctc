@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking - IRTC</title>
+    <link rel="stylesheet" href="/css/booking.css">
+</head>
+<body>
+    <div class="booking-container">
+        <h2>Train Ticket Booking</h2>
+        <div id="alert" class="alert"></div>
+        <form id="bookingForm">
+            <div class="input-group">
+                <label for="from">From</label>
+                <input type="text" id="from" placeholder="Departure Station" required>
+            </div>
+            <div class="input-group">
+                <label for="to">To</label>
+                <input type="text" id="to" placeholder="Destination Station" required>
+            </div>
+            <div class="input-group">
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="input-group">
+                <label for="passengers">No. of Passengers</label>
+                <input type="number" id="passengers" placeholder="Enter count" min="1" required>
+            </div>
+            <div class="input-group">
+                <label for="class">Class</label>
+                <select id="class" required>
+                    <option value="AC First Class">AC First Class</option>
+                    <option value="AC Second Class">AC Second Class</option>
+                    <option value="AC Third Class">AC Third Class</option>
+                    <option value="Sleeper">Sleeper</option>
+                    <option value="General">General</option>
+                </select>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    <script src="/js/booking.js"></script>
+</body>
+</html>
